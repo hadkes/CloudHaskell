@@ -1,6 +1,7 @@
 ## This repository serves as the codebase for the subject of Individual Programming for Cloud Application in School of Computer Science and Statistics.
 
 # How to build
+##
 ```
 stack setup 
 stack build
