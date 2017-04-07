@@ -18,7 +18,7 @@ stack exec mapreduce-haskell-project local count longTestFile.txt
 stack image container
 ``` 
 
-# Build image
+# Run manager
 ```
 docker-compose up
 stack exec mapreduce-haskell-project master localhost 8080 count longTestFile.txt
