@@ -15,11 +15,13 @@ stack exec mapreduce-haskell-project local count longTestFile.txt
 
 # Run in distributed process
 ```
-stack image container
+stack exec mapreduce-haskell-project slave localhost 8081
+stack exec mapreduce-haskell-project slave localhost 8082
+stack exec mapreduce-haskell-project slave localhost 8083
+stack exec mapreduce-haskell-project slave localhost 8084
 ``` 
 
 # Run manager
 ```
-docker-compose up
 stack exec mapreduce-haskell-project master localhost 8080 count longTestFile.txt
 ```
